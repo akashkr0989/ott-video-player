@@ -4,7 +4,7 @@ import { Button, Container, Typography } from "@mui/material";
 import styles from "./banner.module.scss";
 import httpService from "@/app/services/http.service";
 
-export interface BannerProps {
+interface BannerProps {
   backgroundImage: string;
   description: string;
 }
