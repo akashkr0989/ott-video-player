@@ -1,0 +1,42 @@
+.bannerContainer {
+  position: relative;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background-size: cover;
+  background-position: center center;
+  
+ 
+  .descriptionBox {
+    width: 35rem;
+    height: 14rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+  .description {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .bannerButton {
+    margin: 0 10px;
+  }
+}
+
+.bannerContainer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  pointer-events: none;
+}
+
