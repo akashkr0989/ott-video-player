@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <AppBar position="static">
       <Container maxWidth={false} style={{padding: "0 3rem"}}>
         <Toolbar disableGutters>
-          <img src="/Logonetflix.png" alt="" className={styles.logo} />
+          <Image width={100} height={50} src="/Logonetflix.png" alt="" className={styles.logo} />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
