@@ -1,0 +1,56 @@
+.video-player-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: inherit;
+}
+.video-js {
+  flex-basis: 60%;
+}
+.playlist {
+  flex-basis: 40%;
+  margin-right: 10px;
+}
+
+.reel-player-container {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.reels-controls {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.reels-overlay {
+  position: absolute;
+  /* height: 100%; */
+  width: 100%;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.reels-side-menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reel-player {
+  height: inherit;
+  width: 100%;
+  position: relative;
+}
+
+.reel-player .video-js {
+  border-radius: 12px;
+}
+
+.vjs-theatre-mode {
+  cursor: pointer;
+}
