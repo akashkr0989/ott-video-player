@@ -41,9 +41,15 @@ const Header: React.FC<HeaderProps> = ({}) => {
   };
   return (
     <AppBar position="static">
-      <Container maxWidth={false} style={{padding: "0 3rem"}}>
+      <Container maxWidth={false} style={{ padding: "0 3rem" }}>
         <Toolbar disableGutters>
-          <Image width={100} height={50} src="/Logonetflix.png" alt="" className={styles.logo} />
+          <Image
+            width={100}
+            height={50}
+            src="/Logonetflix.png"
+            alt=""
+            className={styles.logo}
+          />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -79,8 +85,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import 'video.js/dist/video-js.css';
 import 'videojs-playlist';
@@ -28,7 +29,7 @@ export default function VideoPlayer({
     playerRef,
     options,
   });
-
+  
   return (
     <>
       {!options.reelMode && (
@@ -36,10 +37,10 @@ export default function VideoPlayer({
           <div className="video-player" data-vjs-player>
             <video ref={videoRef} className="video-js" />
           </div>
-          <div className="playlist">{newPlayList}</div>
+          {/* <div className="playlist">{newPlayList}</div> */}
         </section>
       )}
-      {options.reelMode && (
+      {/* {options.reelMode && (
         <section className="reel-player-container">
           <section className="reel-player">
             <div className="video-player" data-vjs-player>
@@ -47,7 +48,7 @@ export default function VideoPlayer({
             </div>
           </section>
         </section>
-      )}
+      )} */}
     </>
   );
 }

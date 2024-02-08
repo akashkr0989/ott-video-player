@@ -1,3 +1,4 @@
+"use client"
 import './styles.css';
 import PlayListItem from './PlayListItem';
 import playListHandler from './handler';

@@ -42,16 +42,16 @@ const playerHandler = () => {
   useEffect(() => {
     let playListArray: any = [];
     (async () => {
-      const data = new FormData();
+    //   const data = new FormData();
 
-      // Secret keys shouldn't be used directly. Use it from ENV. Its used here due to trial version example.
-      data.append("secret_key", "4de9d9a126824884ad8358e9a8e33258");
-      data.append("app_id", "f8751de2858449248b6e46237e56f6de");
-      const result: any = await httpService.post(apiEndpoints.getToken, data);
-      console.log(result);
-      localStorage.setItem("access_token", result.response.access_token || "");
-      localStorage.setItem("app_token", result.data.app_token || "");
-      localStorage.setItem("product_key", result.data.product_key || "");
+    //   // Secret keys shouldn't be used directly. Use it from ENV. Its used here due to trial version example.
+    //   data.append("secret_key", "4de9d9a126824884ad8358e9a8e33258");
+    //   data.append("app_id", "f8751de2858449248b6e46237e56f6de");
+    //   const result: any = await httpService.post(apiEndpoints.getToken, data);
+    //   console.log(result);
+    //   localStorage.setItem("access_token", result.response.access_token || "");
+    //   localStorage.setItem("app_token", result.data.app_token || "");
+    //   localStorage.setItem("product_key", result.data.product_key || "");
       let content: any;
       try {
         content = await httpService.post(apiEndpoints.getContent, {
